@@ -44,4 +44,8 @@ fi
 javac $1
 
 # Run the "script". Assume the file ends in ".java".
-java "${1%.java} ${@:2}"
+if [[ $# < 2 ]]; then
+	java "${1%.java}"
+else
+	java "${1%.java}" "${@:2}"
+fi
