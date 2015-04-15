@@ -34,6 +34,12 @@ if [[ "$1" == "--help" || "$1" == "-h" ]]; then
   exit 0
 fi
 
+# Ensure specified Java "script" exists.
+if [[ ! -e $1 ]]; then
+	echo >&2 "[!] I can't find that file ($1)!";
+	exit 1;
+fi
+
 # Compile the file.
 javac $1
 
