@@ -11,7 +11,7 @@
 
 help_msg() {
   >&$1 echo "J: Compile and Execute Java \"Scripts\" in One Go!"
-	>&$1 echo "Usage: $0 file.java [program arguments]"
+	>&$1 echo "Usage: j file.java [program arguments]"
   >&$1 echo
   >&$1 echo "  $ j Sudoku.java"
   >&$1 echo "  $ j Sudoku.java Jack Jill"
