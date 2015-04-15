@@ -4,7 +4,7 @@
 [[ -z "$C_CACHE_SIZE" ]] && C_CACHE_SIZE=$((5*1024))
 
 # Check if Java is installed.
-hash java 2>/dev/null || {
+(hash java 2>/dev/null && hash javac 2>/dev/null) || {
 	echo >&2 "[!] J depends on Java to compile and then run the \"scripts\".";
 	exit 1;
 }
