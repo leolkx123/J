@@ -5,7 +5,7 @@
 
 # Check if Java is installed.
 hash java 2>/dev/null || {
-	echo >&2 "j depends on Java to . Aborting.";
+	echo >&2 "[!] J depends on Java to compile and then run the \"scripts\".";
 	exit 1;
 }
 
