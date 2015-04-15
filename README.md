@@ -39,6 +39,7 @@ Where `Sudoku.java` is the Java source file. `Jack` and `Jill` are command line 
 After downloading the Bash script, simply copy it over to your `$PATH` and you're good to go.
 ```sh
 $ wget https://github.com/qw3rtman/j/releases/download/v0.1.0/j
+$ chmod +x j
 $ mv j /usr/local/bin
 ```
 
