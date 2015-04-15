@@ -3,9 +3,9 @@
 
 ![intro](https://raw.githubusercontent.com/qw3rtman/J/add-screenshots/screenshots/intro.png)
 
-Java feels a bit clunky at times. `J` is here to fix that.
+Java feels a bit clunky at times. **`J` is here to fix that.**
 
-`J` gives Java a *scripting* feel. `J` speeds up the development process and saves you the trouble of running...
+`J` **gives Java a *scripting* feel**. `J` **speeds up the development process** and saves you the trouble of running...
 
 ```sh
 $ javac Sudoku.java
