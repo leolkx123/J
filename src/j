@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Maximum cachesize in kilobytes.
+[[ -z "$C_CACHE_SIZE" ]] && C_CACHE_SIZE=$((5*1024))
+
+help_msg() {
+	>&$1 echo "Usage: $0 file.java [program arguments]"
+  >&$1 echo "Execute Java \"scripts\" from the command line."
+  >&$1 echo
+  >&$1 echo "  Ex: j Sudoku.java"
+  >&$1 echo "  Ex: j Sudoku.java Jack Jill"
+  >&$1 echo
+}
+
+cleanup() {
+	rm -rf "*.class"
+}
+
+# Help to display if we have no arguments and no stdin.
+if [[ $# -eq 0 && -t 0 ]]; then
+  help_msg 2
+  exit 1
+fi
+
+# Help to display if we get the flags.
+if [[ "$1" == "--help" || "$1" == "-h" ]]; then
+  help_msg 1
+  exit 0
+fi
