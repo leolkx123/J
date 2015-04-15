@@ -43,5 +43,5 @@ fi
 # Compile the file.
 javac $1
 
-# Run the file. Assume the file ends in ".java".
-java ${1%.java}
+# Run the "script". Assume the file ends in ".java".
+java "${1%.java} ${@:2}"
