@@ -1,5 +1,5 @@
 # `J`
-## Compile and execute Java "scripts" in one go!
+## Compile and Execute Java "Scripts" in One Go!
 
 ![intro](https://raw.githubusercontent.com/qw3rtman/J/add-screenshots/screenshots/intro.png)
 
