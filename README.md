@@ -43,6 +43,8 @@ $ chmod +x j
 $ mv j /usr/local/bin
 ```
 
+If you don't have `wget` on your system, you can download the `j` binary from the [releases page](https://github.com/qw3rtman/j/releases) and follow the above steps from the second one onward.
+
 `J` (obviously) depends on Java (`java` and `javac`). Other than that, `J` has no dependencies!
 
 ## Updating
